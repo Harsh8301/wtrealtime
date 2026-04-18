@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="validate.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Register</h2>
+    <form action="register.php" method="POST" onsubmit="return validateForm()">
+        <input type="text" name="name" id="name" placeholder="Full Name">
+        <input type="email" name="email" id="email" placeholder="Email">
+        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="text" name="mobile" id="mobile" placeholder="Mobile Number">
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
