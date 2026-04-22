@@ -3,7 +3,7 @@ include 'db.php';
 
 $name = $_POST['name'];
 $email = $_POST['email'];
-$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
+$password = $_POST['password'];
 $mobile = $_POST['mobile'];
 
 $sql = "INSERT INTO users (name, email, password, mobile)
